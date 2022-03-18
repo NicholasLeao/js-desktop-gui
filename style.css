@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(186, 206, 194);
+  font-family: helvetica;
+}
+
+.wrapper {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 60px;
+}
+
+.wrapper .ui {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  padding-left: 4px;
+  background: rgb(181, 181, 181);
+  background: linear-gradient(
+    180deg,
+    rgba(181, 181, 181, 1) 0%,
+    rgba(212, 212, 212, 1) 100%
+  );
+}
+
+.ui {
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.window__ui {
+  width: 10px;
+  height: 10px;
+  margin: 7px 0px 7px 7px;
+  border-radius: 50%;
+  background-color: black;
+  
+}
+
+#minimizar {
+  background: rgb(250, 213, 63);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 213, 63, 1) 0%,
+    rgba(236, 217, 66, 1) 100%
+  );
+}
+
+#maximizar {
+  background: rgb(88, 230, 83);
+  background: linear-gradient(
+    180deg,
+    rgba(88, 230, 83, 1) 0%,
+    rgba(96, 210, 107, 1) 100%
+  );
+}
+
+#fechar {
+  background: rgb(230, 83, 83);
+  background: linear-gradient(
+    180deg,
+    rgba(230, 83, 83, 1) 0%,
+    rgba(210, 96, 96, 1) 100%
+  );
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+
+.content h1 {
+  margin-top: 50px;
+  margin: 50px;
+  text-align: center;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+}
