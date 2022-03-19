@@ -10,9 +10,13 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.wrapper .ui {
+.wrapper .ui__bar {
   background-color: red;
   display: flex;
   flex-direction: row;
@@ -25,8 +29,8 @@ body {
   );
 }
 
-.ui {
-    border-bottom: 1px solid rgb(212, 212, 212);
+.ui__bar {
+  border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 .window__ui {
@@ -35,7 +39,6 @@ body {
   margin: 7px 0px 7px 7px;
   border-radius: 50%;
   background-color: black;
-  
 }
 
 #minimizar {
@@ -78,4 +81,9 @@ body {
   text-align: center;
   line-height: 2em;
   letter-spacing: 0.1em;
+}
+
+/* UTIL CLASS */
+.hidden {
+  opacity: 0;
 }
