@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: rgb(186, 206, 194);
   font-family: helvetica;
@@ -81,6 +85,27 @@ body {
   text-align: center;
   line-height: 2em;
   letter-spacing: 0.1em;
+}
+
+.icon__bar {
+  height: auto;
+  padding: 5px;
+  background-color: blue;
+  width: auto;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  margin-right: 7px;
+  border-radius: 10px;
+  background-color: red;
 }
 
 /* UTIL CLASS */
