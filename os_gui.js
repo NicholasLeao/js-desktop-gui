@@ -11,6 +11,8 @@ const content = document.querySelector(".content");
 const windowUi = document.querySelector(".ui__bar");
 const windowBtns = document.querySelectorAll(".window__ui");
 const iconBar = document.querySelector(".icon__bar");
+
+const wrapperList = document.querySelectorAll(".wrapper");
 //      ===== UTIL VARIABLES
 const iconBarIds = [];
 //      ===== AUX FUNCTION FOR WINDOW BUTTONS
@@ -51,7 +53,8 @@ windowUi.addEventListener("mouseup", function (e) {
   if (e.target.classList.contains("window__ui")) return;
   window.removeEventListener("mousemove", windowDrag);
 });
-//            =====
+
+//            ===== UPDATE ICONS ON TASK BAR
 const updateIconBar = function (iconArray) {
   iconBar.innerHTML = "";
 
@@ -63,3 +66,29 @@ const updateIconBar = function (iconArray) {
     console.log(icon);
   });
 };
+
+/////////////////////////////////////////////////////////////////
+// ATTEMPT AT IMPLEMENTING NODE LIST DRAG
+
+// //      ===== NODE LIST --- WRAPPER DIV CSS DRAG IMPLEMENTATION
+// const windowDrag_new = function ({ movementX, movementY }) {
+//   const getStyle = window.getComputedStyle(wrapper);
+//   const left = parseInt(getStyle.left);
+//   const top = parseInt(getStyle.top);
+
+//   this.style.left = `${left + movementX}px`;
+//   this.style.top = `${top + movementY}px`;
+// };
+// //            ===== NODE LIST --- MOUSE DOWN EVENT LISTENER
+// wrapperList.forEach((wrapper) => {
+//   windowUi.addEventListener("mousedown", function (e) {
+//     if (e.target.classList.contains("window__ui")) return;
+//     window.addEventListener("mousemove", windowDrag_new.bind(e.target));
+//   });
+// });
+
+// //            ===== NODE LIST --- MOUSE DOWN REMOVE EVENT LISTENER
+// windowUi.addEventListener("mouseup", function (e) {
+//   if (e.target.classList.contains("window__ui")) return;
+//   window.removeEventListener("mousemove", windowDrag);
+// });
